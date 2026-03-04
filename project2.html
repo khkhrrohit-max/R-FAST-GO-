@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fast Go - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="project2.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <!-- Leaflet Routing Machine CSS -->
+    <link rel="stylesheet"
+     href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css"/>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">
+        <img src="fast go.png" alt="Fast Go Logo">
+        <h2>FAST GO</h2>
+    </div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+        <a href="signin.html">SIGN UP</a>
+        <a href="index2.html">LOGOUT</a>
+        <a href="useryour.html">YOUR</a>
+    </nav>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Your Ride, Your Way!</h1>
+        <p>Book Auto, Taxi & Bike in Minutes</p>
+
+        <div class="booking-box">
+
+            <div class="row">
+                <select id="pickup">
+                    <option value="">Select Pickup</option>
+                </select>
+                <button id="chooseLocationBtn">📍 Choose</button>
+            </div>
+
+            <select id="drop">
+                <option value="">Select Drop</option>
+            </select>
+
+            <select id="vehicle">
+                <option value="Bike">Bike</option>
+                <option value="Auto">Auto</option>
+                <option value="Taxi">Taxi</option>
+            </select>
+
+            <button id="searchRideBtn">Request Ride</button>
+
+            <div id="rideStatus" style="margin-top:10px;"></div>
+            <div id="rideDetails" style="margin-top:10px;"></div>
+
+            <div id="map" style="height:350px; margin-top:15px;"></div>
+
+            <!-- Nearby Riders List -->
+            <div id="vehicleList" style="margin-top:20px;"></div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+<section class="about" id="about">
+    <h2>About Fast Go</h2>
+    <p>
+        Fast Go is a smart ride booking platform that allows you to book
+        Auto, Taxi, and Bike services instantly. We provide safe,
+        affordable, and quick transportation at your fingertips.
+    </p>
+</section>
+
+<!-- ================= SERVICES SECTION ================= -->
+<section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+        <i class="fa-solid fa-motorcycle"></i>
+        <h3>Bike</h3>
+        <p>Quick and affordable ride for single passengers.</p>
+    </div>
+
+    <div class="service-box">
+        <i class="fa-solid fa-taxi"></i>
+        <h3>Taxi</h3>
+        <p>Comfortable rides for family and group travel.</p>
+    </div>
+
+    <div class="service-box">
+        <i class="fa-solid fa-car"></i>
+        <h3>Auto</h3>
+        <p>Easy and budget-friendly city transport.</p>
+    </div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>designed by ROHIT KHOKHAR</p>
+    <p>Email: khkhrrohit@gmail.com</p>
+    <p>Phone: +91 8099317347</p>
+    <p>Location: India</p>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Fast Go | Designed by Rohit</p>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Leaflet Routing Machine -->
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+<!-- Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Your JS -->
+<script src="project2.js"></script>
+
+</body>
+</html>

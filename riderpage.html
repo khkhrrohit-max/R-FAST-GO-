@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fast Go - Rider Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="riderpage.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+const supabaseUrl = "https://omvlctrwkbauxyoyxcrv.supabase.co";
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9tdmxjdHJ3a2JhdXh5b3l4Y3J2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE4NTQxMzIsImV4cCI6MjA4NzQzMDEzMn0.fY6yv_QjuDDtovHz4dHlGV71dvUBUsKo0Hz7dd09i2c";
+
+const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
+</script>
+
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+</head>
+
+<body>
+
+<!-- ================= RIDER NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">
+        <img src="fast go.png" alt="Fast Go Logo">
+        <h2>FAST GO RIDER</h2>
+    </div>
+
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#earnings">Earnings</a>
+        <a href="#rides">My Rides</a>
+        <a href="rider.html">SIGN UP</a>
+        <a href="index2.html">Logout</a>
+        <a href="YOUR.HTML">YOUR</a>
+    </nav>
+</header>
+<!-- ================= WALLET SECTION ================= -->
+<div class="wallet-card">
+    <h2>💰 FAST GO Wallet</h2>
+
+   <a href="walllet.html">BALANCE</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Drive & Earn With Fast Go</h1>
+        <p>Accept rides and grow your income</p>
+
+        <div class="rider-box">
+            <h3>Current Status</h3>
+            <p id="status">Offline</p>
+            <button onclick="toggleStatus()">Go Online</button>
+        </div>
+        <div id="mapContainer" style="height:400px; margin:20px;"></div>
+    </div>
+</section>
+
+<!-- ================= RIDES SECTION ================= -->
+<section class="rides" id="rides">
+    <h2>Available Rides</h2>
+
+    <div class="ride-card">
+        <p><strong>Pickup:</strong> City Center</p>
+        <p><strong>Drop:</strong> Railway Station</p>
+        <p><strong>Fare:</strong> ₹250</p>
+        <button onclick="acceptRide(24.8170,93.9368,24.8000,93.9500,250)">
+            Accept Ride
+        </button>
+    </div>
+
+    <div class="ride-card">
+        <p><strong>Pickup:</strong> Mall Road</p>
+        <p><strong>Drop:</strong> Airport</p>
+        <p><strong>Fare:</strong> ₹480</p>
+        <button onclick="acceptRide(24.8200,93.9400,24.7600,93.8900,480)">
+            Accept Ride
+        </button>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Fast Go Rider Panel | Designed by Rohit</p>
+</footer>
+
+<script src="riderpage.js"></script>
+</body>
+</html>

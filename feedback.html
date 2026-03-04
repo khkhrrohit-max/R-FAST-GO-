@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEEDBACK</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div>
+      <h1> FEEDBACK FORM</h1>
+    
+
+
+<form id="form">
+  <div class="field">
+    <label for="name"> your name</label>
+    <input type="text" name="name" id="name">
+  </div>
+  <div class="field">
+    <label for="look">look of the website</label>
+    <input type="text" name="look" id="look">
+  </div>
+  <div class="field">
+    <label for="buttons">all buttons are working</label>
+    <input type="text" name="buttons" id="buttons">
+  </div>
+  <div class="field">
+    <label for="color">website color</label>
+    <input type="text" name="color" id="color">
+  </div>
+  <div class="field">
+    <label for="marks">marks out of 10</label>
+    <input type="text" name="marks" id="marks">
+  </div>
+  <div class="field">
+    <label for="suggestion">suggestion(idea)</label>
+    <input type="text" name="suggestion" id="suggestion">
+  </div>
+<input type="hidden" name="email" value="khkhrrohit@gmail.com">
+  <input type="submit" id="button" value="Send Email" >
+</form>
+</div>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('oJsKfBhacylKGQmXb')
+  
+</script>
+<script src="feedback.js"> </script>
+</body>
+</html>

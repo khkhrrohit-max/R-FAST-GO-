@@ -1,0 +1,171 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #1f1f1f, #00ff99);
+    background-size: 400% 400%;
+    animation: bgAnimation 8s ease infinite;
+}
+
+/* Background animation */
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main Container */
+.c1 {
+    width: 380px;
+    padding: 35px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #00ff99;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Inputs & Select */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+input:focus, select:focus {
+    background: rgba(0,255,153,0.2);
+    box-shadow: 0 0 10px #00ff99;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00ff99, #00ccff);
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ff99;
+}
+
+/* Paragraph */
+p {
+    color: white;
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+/* Box styling */
+.vechile_image,
+.your_id,
+.drive_licence,
+.rc,
+.car_doc {
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Paragraph default */
+.vechile_image p,
+.your_id p,
+.drive_licence p,
+.rc p,
+.car_doc p {
+    color: #888;
+    transition: 0.3s ease;
+}
+
+/* File input */
+.vechile_image input[type="file"],
+.your_id input[type="file"],
+.drive_licence input[type="file"],
+.rc input[type="file"],
+.car_doc input[type="file"] {
+    width: 100%;
+    color: #888;
+}
+
+/* When file selected → filename black */
+.vechile_image input[type="file"]:valid,
+.your_id input[type="file"]:valid,
+.drive_licence input[type="file"]:valid,
+.rc input[type="file"]:valid,
+.car_doc input[type="file"]:valid {
+    color: #000;
+    font-weight: bold;
+}
+
+/* When file selected → paragraph text black */
+.vechile_image input[type="file"]:valid ~ p,
+.your_id input[type="file"]:valid ~ p,
+.drive_licence input[type="file"]:valid ~ p,
+.rc input[type="file"]:valid ~ p,
+.car_doc input[type="file"]:valid ~ p {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Button */
+button {
+    padding: 8px 18px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

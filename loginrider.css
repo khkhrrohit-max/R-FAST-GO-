@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000000,#1f1f1f,#00ff99);
+    background-size:400% 400%;
+    animation:bgMove 8s ease infinite;
+}
+
+/* Background Animation */
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Login Card */
+.container{
+    width:360px;
+    padding:40px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
+    text-align:center;
+    animation:fadeIn 1s ease-in-out;
+}
+
+/* Fade Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h1{
+    color:#00ff99;
+    margin-bottom:25px;
+    font-weight:600;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:10px;
+    border:none;
+    outline:none;
+    background:rgba(255,255,255,0.15);
+    color:white;
+    font-size:14px;
+    transition:0.3s;
+}
+
+input::placeholder{
+    color:#ddd;
+}
+
+input:focus{
+    background:rgba(0,255,153,0.2);
+    box-shadow:0 0 10px #00ff99;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(45deg,#00ff99,#00ccff);
+    color:black;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px #00ff99;
+}
+
+p{
+    margin-top:18px;
+    color:white;
+    font-size:14px;
+}
+
+p span{
+    color:#00ff99;
+    cursor:pointer;
+    font-weight:500;
+}
+
+p span:hover{
+    text-decoration:underline;
+}

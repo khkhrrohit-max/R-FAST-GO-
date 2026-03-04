@@ -1,0 +1,111 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Animated Gradient Background */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #667eea, #764ba2, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+    0%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+
+/* Login Card */
+.C1{
+    width: 350px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Card Fade Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.C1 p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Input Styling */
+.C1 input{
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Input Focus Effect */
+.C1 input:focus{
+    box-shadow: 0 0 10px #ffffff;
+}
+
+/* Button Styling */
+#loginGetOtp,
+#loginVerify,
+#loginBtn{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button Hover Animation */
+#loginGetOtp:hover,
+#loginVerify:hover,
+#loginBtn:hover{
+    background: #000;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Link Styling */
+.C1 a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.C1 a:hover{
+    text-decoration: underline;
+}

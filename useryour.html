@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAST GO - User Dashboard</title>
+    <link rel="stylesheet" href="useryour.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Welcome to FAST GO 🚗</h1>
+
+    <button class="btn-logout" onclick="logout()">Logout</button>
+
+    <!-- Profile -->
+    <div class="card">
+        <h2>👤 Profile</h2>
+        <p id="userName"></p>
+        <p id="userNumber"></p>
+        <button class="btn-danger" onclick="deleteAccount()">Delete Account</button>
+    </div>
+
+    <!-- Book Ride -->
+     <button> <a href="project2.html">HOME</a></button>
+    <div class="card">
+        <h2>📍 Book a Ride</h2>
+        <input type="text" id="pickup" placeholder="Enter Pickup Location">
+        <input type="text" id="drop" placeholder="Enter Drop Location">
+        <button class="btn-primary" onclick="bookRide()">Book Ride</button>
+    </div>
+
+    <!-- Ride History -->
+    <div class="card">
+        <h2>📜 Ride History</h2>
+        <div id="rideHistory"></div>
+    </div>
+
+</div>
+
+<script src="useryour.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:black;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:40px;
+    margin-right:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00c6ff;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.rider-box{
+    margin-top:30px;
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:10px;
+    display:inline-block;
+}
+
+.rider-box button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:#00c6ff;
+    cursor:pointer;
+}
+
+/* Rides */
+.rides{
+    padding:50px;
+    text-align:center;
+}
+
+.ride-card{
+    background:rgba(255,255,255,0.1);
+    margin:20px auto;
+    padding:20px;
+    width:300px;
+    border-radius:10px;
+}
+
+.ride-card button{
+    margin-top:10px;
+    padding:8px 15px;
+    border:none;
+    border-radius:15px;
+    background:#0072ff;
+    color:white;
+    cursor:pointer;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+    margin-top:40px;
+}
+
+/* ================= WALLET DESIGN ================= */
+
+.wallet-card {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 350px;
+}
+
+.wallet-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.wallet-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#walletBalance {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#companyBalance {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+#rechargeBtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#rechargeBtn:hover {
+    background: #218838;
+}
+/* ================= MAP ROUTE VISIBILITY FIX ================= */
+
+/* Route line color */
+.leaflet-routing-container {
+    background: rgba(0, 0, 0, 0.85) !important;
+    color: white !important;
+    border-radius: 10px;
+}
+
+/* Routing instructions text */
+.leaflet-routing-container h2,
+.leaflet-routing-container h3,
+.leaflet-routing-container table {
+    color: white !important;
+}
+
+/* Arrow icons */
+.leaflet-routing-icon {
+    filter: invert(1); /* makes white arrow black */
+}
+
+/* Route line styling */
+.leaflet-routing-line {
+    stroke: #00ffcc !important;   /* bright cyan */
+    stroke-width: 6 !important;
+}
+
+/* Alternative route */
+.leaflet-routing-alt {
+    background: rgba(255,255,255,0.1) !important;
+    color: white !important;
+}
+
+/* Zoom control visibility */
+.leaflet-control-zoom a {
+    background: black !important;
+    color: white !important;
+}

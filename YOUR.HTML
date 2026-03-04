@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAST GO - Rider Dashboard</title>
+    <link rel="stylesheet" href="your.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <h1>FAST GO - Rider Profile</h1>
+
+    <!-- Profile -->
+    <div class="profile">
+
+        <div class="profile-top">
+            <img id="profileImage" src="https://via.placeholder.com/100" alt="Profile">
+            <input type="file" id="uploadImage" accept="image/*">
+            <br>
+        </div>
+
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Mobile:</strong> <span id="mobile"></span></p>
+        <p><strong>Vehicle:</strong> <span id="vehicle"></span></p>
+        <p><strong>Plate:</strong> <span id="plate"></span></p>
+
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+        <div>Accepted: <span id="accepted">0</span></div>
+        <div>Declined: <span id="declined">0</span></div>
+        <div>Completed: <span id="completed">0</span></div>
+        <div>Earnings ₹<span id="earnings">0</span></div>
+    </div>
+
+    <!-- Ride History -->
+    <h3>Ride History</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>From</th>
+                <th>To</th>
+                <th>Fare</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="historyTable"></tbody>
+    </table>
+
+</div>
+
+<script src="your.js"></script>
+</body>
+</html>
